@@ -9,7 +9,7 @@ public class hari : MonoBehaviour
     {
         y -= 10.0f * Time.deltaTime;
 
-        if(y<0.0f)
+        if (y < 0.0f)
         {
             y = 12.0f;
         }

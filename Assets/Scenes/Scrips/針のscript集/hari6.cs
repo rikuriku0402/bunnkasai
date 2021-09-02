@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class hari6 : MonoBehaviour
 {
-    float y = 4.0f;
+    float y = 8.0f;
     void Update()
     {
-        y -= 4.0f * Time.deltaTime;
+        y -= 8.0f * Time.deltaTime;
 
         if (y < 0.0f)
         {
-            y = 4.0f;
+            y = 8.0f;
         }
         transform.localPosition = new Vector3(8, y, 0);
     }

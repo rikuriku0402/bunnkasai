@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class hari7 : MonoBehaviour
+public class Hari16 : MonoBehaviour
 {
-    float y = 20.0f;
+    float y = 12.0f;
     void Update()
     {
         y -= 20.0f * Time.deltaTime;
 
         if (y < 0.0f)
         {
-            y = 20.0f;
+            y = 12.0f;
         }
-        transform.localPosition = new Vector3(10, y, 0);
+        transform.localPosition = new Vector3(-4, y, 0);
     }
 }

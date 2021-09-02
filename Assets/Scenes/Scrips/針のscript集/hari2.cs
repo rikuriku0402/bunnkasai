@@ -13,6 +13,6 @@ public class hari2 : MonoBehaviour
         {
             y = 8.0f;
         }
-        transform.localPosition = new Vector3(2, y, 0);
+        transform.localPosition = new Vector3(3.6f, y, 0);
     }
 }

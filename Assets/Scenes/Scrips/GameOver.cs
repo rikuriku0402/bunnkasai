@@ -5,11 +5,16 @@ using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour
 {
+    private AudioSource audioSource;
     public Text textGameOver;
     private bool inGame;
+    [SerializeField]private AudioClip overSound;
     void Start()
     {
         textGameOver.enabled = false;
+
+        
+        audioSource = gameObject.AddComponent<AudioSource>();
 
 
 
@@ -24,7 +29,10 @@ public class GameOver : MonoBehaviour
             GameObject PlayerObj = GameObject.Find("Player");
             if ( PlayerObj== null)
             {
+                audioSource.PlayOneShot(overSound);
                 textGameOver.enabled = true;
+               
+                inGame = false;
             }
         }
     }

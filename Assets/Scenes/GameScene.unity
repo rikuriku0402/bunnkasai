@@ -1862,7 +1862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3c95c983171374fa8378671df8b342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textGameOver: {fileID: 0}
+  textGameOver: {fileID: 907630991}
   overSound: {fileID: 0}
 --- !u!1 &1248362708
 GameObject:

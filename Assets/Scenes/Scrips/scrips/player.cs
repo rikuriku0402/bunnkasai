@@ -5,10 +5,14 @@ using UnityEngine;
 public class player : MonoBehaviour
 {
     [Header("プレイヤーのスピード")] public float speed = 2.0f;
-
+    private CharacterController controller;
+    private Vector3 moveDirection;
 
     // Start is called before the first frame update
-
+    void Start()
+    {
+        controller = GetComponent<CharacterController>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -28,6 +32,15 @@ public class player : MonoBehaviour
         {
             transform.position -= transform.right * speed * Time.deltaTime;
         }
+        //if(controller.isGrounded)
+        //{
+        //    if(Input.GetMouseButtonDown(0))
+        //    {
+        //        moveDirection.y = 20;
+        //    }
+        //}
+        //moveDirection.y -= 10 * Time.deltaTime;
+        //controller.Move(moveDirection * Time.deltaTime);
 
     }
 
